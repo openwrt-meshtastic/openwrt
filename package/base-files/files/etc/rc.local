@@ -1,4 +1,12 @@
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
 
+str="OpenWrt One"
+model=$(cat /tmp/sysinfo/model)
+if [ "$str" == "$model" ];then
+    #echo "ok"
+    echo "spidev" > /sys/bus/spi/devices/spi2.0/driver_override
+    echo "spi2.0" > /sys/bus/spi/drivers/spidev/bind
+fi
+
 exit 0
