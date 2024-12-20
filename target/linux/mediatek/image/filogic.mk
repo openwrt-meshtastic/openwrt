@@ -1232,6 +1232,7 @@ define Device/openwrt_one
   DEVICE_MODEL := One
   DEVICE_DTS := mt7981b-openwrt-one
   DEVICE_DTS_DIR := ../dts
+  DEVICE_DTS_OVERLAY := mt7981b-openwrt-one-mikrobus-spidev
   DEVICE_DTC_FLAGS := --pad 4096
   DEVICE_DTS_LOADADDR := 0x43f00000
   DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware kmod-rtc-pcf8563 kmod-usb3 kmod-nvme kmod-phy-airoha-en8811h
