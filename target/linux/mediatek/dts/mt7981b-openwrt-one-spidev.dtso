@@ -3,10 +3,6 @@
 
 / {
         compatible = "openwrt,one", "mediatek,mt7981";
-        #address-cells = <1>;
-        #size-cells = <0>;
-        pinctrl-names = "default";
-        pinctrl-0 = <&spi1_flash_pins>;
         status = "okay";
 
         fragment@0 {
