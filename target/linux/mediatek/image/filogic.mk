@@ -1229,6 +1229,7 @@ define Device/openwrt_one
   DEVICE_VENDOR := OpenWrt
   DEVICE_MODEL := One
   DEVICE_DTS := mt7981b-openwrt-one
+  DEVICE_DTS_CONFIG := config-mt7981b-openwrt-one
   DEVICE_DTS_OVERLAY:= mt7981b-openwrt-one-spidev
   DEVICE_DTS_DIR := ../dts
   DEVICE_DTC_FLAGS := --pad 4096
